@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hometask 3</title>
+</head>
+
+<body>
+
+    <main>
+        <h3>Соберите свой боул и закажите нашу доставку:</h3>
+        <img src="img/bowl.jpg" alt="alt">
+        <form action="URL" method="GET" id="my_form"
+            onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+            <label for="firstname"><b>Имя:</b></label><br>
+            <input type="text" id="firstname" name="firstname" placeholder="Клементина"><br><br>
+
+            <label for="lastname"><b>Фамилия:</b></label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="Кручински"><br><br>
+
+            <label for="mail"><b>E-mail:</b></label><br>
+            <input type="email" id="mail" name="mail" placeholder="K.kruchinski@gmail.com"><br><br>
+
+            <label for="typeofsticks"><b>Выберите тип палочек:</b></label><br>
+            <select id="typeofsticks">
+                <option value="learning">Учебные</option>
+                <option value="usual">Обычные</option>
+            </select><br><br>
+
+            <b>Выберите основу боула:</b><br>
+            <input type="radio" id="rice" name="maindish" value="rice">
+            <label for="rice">Рис</label><br>
+            <input type="radio" id="udon" name="maindish" value="udon">
+            <label for="udon">Лапша удон</label><br><br>
+
+            <b>Выберите дополнительную начинку:</b><br>
+            <input type="checkbox" id="item1" name="item1" value="Mushrooms" checked>
+            <label for="item1">Грибы шиитаке</label><br>
+            <input type="checkbox" id="item2" name="item2" value="Cheese">
+            <label for="item2">Сыр фета</label><br>
+            <input type="checkbox" id="item3" name="item3" value="Tomatoes">
+            <label for="item3">Помидоры</label><br>
+            <input type="checkbox" id="item4" name="item4" value="Cucumbers">
+            <label for="item4">Огурцы</label><br>
+            <input type="checkbox" id="item5" name="item5" value="Corn">
+            <label for="item5">Кукуруза</label><br>
+            <input type="checkbox" id="item6" name="item6" value="Olives">
+            <label for="item6">Оливки</label><br><br>
+
+            <label for="payment"><b>Выберите способ оплаты:</b></label><br>
+            <select id="payment">
+                <option value="cash">Наличные</option>
+                <option value="card">Банковская карта</option>
+            </select><br><br>
+
+            <b>Комментарий к заказу:</b><br>
+            <textarea rows="5" cols="35" name="text"></textarea><br>
+
+            <input type="submit" value="Заказать">
+
+        </form>
+    </main>
+</body>
+
+
+</html>
